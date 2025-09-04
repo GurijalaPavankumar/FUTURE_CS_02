@@ -1,0 +1,38 @@
+# Task 2 – SIEM & Incident Response (Splunk)
+
+This task involved using **Splunk** to analyze sample web access logs for suspicious activity such as:
+- Unauthorized access attempts (401/403 errors)
+- Brute force login attempts
+- SQL Injection probes
+- General error trends
+
+The objective was to simulate a **Security Operations Center (SOC)** workflow:
+1. Ingest sample log data into Splunk.
+2. Run structured searches to detect anomalies.
+3. Document findings and classify incidents.
+
+---
+
+## 🔍 Key Findings
+- **Multiple failed login attempts** (potential brute force) detected from IP `203.0.113.45`.
+- **Unauthorized access attempts** to `/login`, `/products`, and suspicious traversal attempts (`../../../etc/passwd`).
+- **No SQL injection probes** were detected in this dataset.
+- General 404 errors were observed, but not critical.
+
+---
+
+## 📊 Evidence
+Screenshots of Splunk searches and results have been included in the report.
+
+---
+
+## 📄 Report
+The full detailed report with screenshots is available here:  
+👉 [Task2_Incident_Report_With_Screenshots.pdf](./Task2_Incident_Report_With_Screenshots.pdf)
+
+---
+
+## 🚀 Learning Outcome
+- Hands-on experience with **Splunk SIEM** for log ingestion and searching.
+- Practical understanding of **incident detection** and classification.
+- Exposure to real-world SOC workflows like brute force detection, error monitoring, and attack pattern searches.
